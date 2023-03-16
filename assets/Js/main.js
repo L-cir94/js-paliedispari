@@ -73,10 +73,10 @@ function isEven(sum) {
 }
 if(isEven(sum)){
     console.log('la somma è pari ')
-    turn = "pari"
+
 }else{
     console.log('la somma è dispari');
-    turn = "pari"
+
 }
 
 if (( parioDispari === "pari" && sum % 2 == 0) || ( parioDispari === "dispari" && sum % 2 != 0)){
