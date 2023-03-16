@@ -7,7 +7,7 @@ inserita è palindroma
 /* strumenti
 
 */
-let userWord = prompt('inserisci una parola, controlliamo se è palindroma')
+let userWord = prompt('inserisci una parola, controlliamo se è palindroma').toLowerCase()
 
 function palindromo(str) {
     const regex = /[\W_]/g;
@@ -57,9 +57,28 @@ if(parioDispari !== 'pari' && parioDispari  !== 'dispari' ){
 console.log(`l'utente ha scelto: ${parioDispari}`)
 let numberUser = Number(prompt('iserisci un numero da 1 a 5'));
 if(numberUser > 5){
-alert('devi inserire un numero minore di 5!')
+alert('devi inserire un numero al massimo fino al 5!')
 let numberUser = Number(prompt('iserisci un numero da 1 a 5'))
 }
 console.log(`numero pc: ${numberPc} numero utente: ${numberUser}`)
 let sum = numberPc + numberUser
 console.log(`la somma dei sue numeri è ${sum}`)
+
+function isEven(sum) {
+    if (sum % 2 == 0) {
+        return true
+    } else {
+        return false
+    }
+}
+if(isEven(sum)){
+    console.log('la somma è pari ')
+}else{
+    console.log('la somma è dispari');
+}
+
+if ((isEven == "pari" && sum % 2 == 0) || (isEven == "dispari" && sum % 2 != 0)){
+    console.log('hai vinto!')
+}else{
+    console.log('hai perso!');
+}
