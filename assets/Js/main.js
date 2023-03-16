@@ -7,7 +7,7 @@ inserita è palindroma
 /* strumenti
 
 */
-let userWord = prompt('inserisci una parola, controlliamo se è palindroma').toLowerCase()
+/* let userWord = prompt('inserisci una parola, controlliamo se è palindroma').toLowerCase()
 
 function palindromo(str) {
     const regex = /[\W_]/g;
@@ -33,7 +33,7 @@ if (!palindromo(userWord)) {
 } else {
     console.log(`la parola inserita: '${userWord}' è palindroma`);
 }
-
+ */
 /* 
 Pari e Dispari
 L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
@@ -73,11 +73,13 @@ function isEven(sum) {
 }
 if(isEven(sum)){
     console.log('la somma è pari ')
+    turn = "pari"
 }else{
     console.log('la somma è dispari');
+    turn = "pari"
 }
 
-if ((isEven == "pari" && sum % 2 == 0) || (isEven == "dispari" && sum % 2 != 0)){
+if (( parioDispari === "pari" && sum % 2 == 0) || ( parioDispari === "dispari" && sum % 2 != 0)){
     console.log('hai vinto!')
 }else{
     console.log('hai perso!');
