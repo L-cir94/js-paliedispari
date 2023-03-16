@@ -50,39 +50,16 @@ let numberPc = Math.floor(Math.random() * 5) + 1;
 
 //chiedo all'utente di scegliere pari o dispari e formatto in lettere minuscole? mi serve a qualcosa? boh
 let parioDispari = prompt('scegli se pari o dispari').toLowerCase()
-if(parioDispari != 'pari' || parioDispari  != 'dispari' ){
+if(parioDispari !== 'pari' && parioDispari  !== 'dispari' ){
     alert('devi inserire la parola pari o dispari')
     parioDispari = prompt('scegli se pari o dispari').toLowerCase()
 }
 console.log(`l'utente ha scelto: ${parioDispari}`)
 let numberUser = Number(prompt('iserisci un numero da 1 a 5'));
 if(numberUser > 5){
-alert('devi inserire un numero maggiore di 5!')
+alert('devi inserire un numero minore di 5!')
+let numberUser = Number(prompt('iserisci un numero da 1 a 5'))
 }
 console.log(`numero pc: ${numberPc} numero utente: ${numberUser}`)
-
-
-/* let numberPc = Math.floor(Math.random() * 5) + 1;
-
-console.log(`numero utente ${numberUser} numero pc ${numberPc} `)
-
-if (numberUser > numberPc) {
-
-    console.log("hai vinto")
-
-} else if (numberUser == numberPc) {
-
-    console.log("hai pareggiato")
-
-} else {
-
-    console.log("hai perso");
-}
-function somma(userChoise,numberPc) {
-let sum = userChoise + numberPc
-console.log(sum)
-    
-}
-console.log(sum)
-const sum = numberUser + numberPc
-console.log(sum) */
+let sum = numberPc + numberUser
+console.log(`la somma dei sue numeri è ${sum}`)
